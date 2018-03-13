@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Chris}{Maness}{ \urlstyle{same}\url{christophermaness.me} \\
+\href{mailto:chris@christophermaness.me}{chris@christophermaness.me} | 423.502.5115
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{ETSU}
+\descript{Master of Science -\linebreak Computer Science}
+\location{Expected May 2018}
+\sectionsep
+
+
+\descript{Bachelors of Science -\linebreak Computer Science}
+\location{May 2012}
+Conc. in Software Engineering \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/ChrisManess}{\custombold{ChrisManess}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/csmaness}{\custombold{csmaness}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+% TODO: Find a more intelligent way to list languages and tools
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5,000 lines:}
+Java \textbullet{}   C\# \textbullet{} JavaScript \textbullet{} Ruby\\
+Python \textbullet{} PHP\\
+\sectionsep
+\location{Over 1,000 lines:}
+Apex \textbullet{} C++ \textbullet{} CSS \textbullet{} SQL\\
+Typescript\\
+\sectionsep
+\location{Learning:}
+Elixir \& Phoenix \textbullet{} iOS \textbullet{} Android\\
+React Native\\
+\sectionsep
+\location{Frameworks \& Libraries:}
+Angular 4 \textbullet{} D3 \textbullet{} Laravel \\
+Ruby on Rails \textbullet{} Tensorflow\\
+OpenCV
+\sectionsep
+\subsection{Tools}
+InteliJ \textbullet{} Illuminated Cloud \\
+Atom \textbullet{} Visual Studio \textbullet{} Git\\
+Vagrant \textbullet{} Docker \textbullet{} Linux\\
+OSX \textbullet{} Windows \textbullet{} Tableau
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{nCino}
+\descript{| Software Developer }
+\location{August 2016 – Present | Wilmington, NC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Working as a Software Developer primarily on the Salesforce platform. \item Using Apex, Typescript, Javascript, Angular.js and Angular 4. 
+\item Part of the team that created nCino's OCR Product
+\item Using Python, OpenCV, Tensorflow, and the AWS platform
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CastleBranch}
+\descript{| Software Developer }
+\location{Decemeber 2015 – Aug 2016 | Wilmington, NC}
+\begin{tightemize}
+\item Created automated methods to collect data from various internal systems for reports to department heads, sales, and shareholder meetings.
+\item Helped to create a new customer on boarding application to replace a legacy PHP system.
+\item Used Javascript, PHP, D3.js, Vue.js, Laravel, Python, and Webpack
+\end{tightemize}
+\sectionsep
+
+\runsubsection{UNCW}
+\descript{| Data Analyst }
+\location{June 2015 – December 2015 | Wilmington, NC}
+\begin{tightemize}
+\item Manual cleaning and verification of data provided by internal systems.
+\item Created reports, narratives, and visualizations around student and course data. 
+\item Attempted to automate processes where possible.
+\item Used Tableau, Python, Access, and Excel
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ORAU}
+\descript{| Post Bach - Software Developer }
+\location{June 2011 – August 2013 | Oak Ridge, TN}
+\begin{tightemize}
+\item Started as an intern and worked my way up to full time in August 2012.
+\item Worked on the CoNNECT project to provide consumers with better ways to understand and visualize power usage.
+\item Created a platform for analyzing, querying, and visualizing Twitter data in real-time.
+\item Assisted with creating dashboards for a project to better analyze Medicaid and Medicare spending.
+\item Used many languages and tools including: Javascript, Python, Ruby, Java, Mongodb, MySQL, Node.js, D3.js, some PHP for prototypes, and Apache Storm.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Side Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Misc Projects} 
+
+\begin{tabular}{rll}
+2014 - 2015& Tripseekr.co - Visual travel search engine scraping the Kayak API.\\
+2017 - 2017 & Code Bootcamp - Taught Ruby and Javascript for a local bootcamp.\\
+2017 - 2018& ChurchCareGroups - Relationship engine to help churches do more.\\
+2009 - 2018& Freelancing - Supplement income with various freelance jobs.\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+
+\begin{tabular}{rll}
+2012& Practical Web Based Visualization for Comparative Energy Usage Analysis\\
+2012& CoNNECT: Data Analytics for Energy Efficient Communities.*\\
+2012& An Integrated Geovisual Analytics Framework for Analysis of Energy\\
+&Consumption Data and Renewable Energy Potentials.*\\
+2012& Interactive Visual Analysis of High Throughput Text Streams.*\\
+2017& Intelligent Taxi Hailing System for Smart Cities with Connected Vehicles*
+\end{tabular}
+*Not Primary Author
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
