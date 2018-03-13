@@ -1,1 +1,1 @@
-[[https://github.com/ChrisManess/Resume/blob/master/ChrisManessResume.jpg|alt=resume]]
+![Resume](https://github.com/ChrisManess/Resume/blob/master/ChrisManessResume.jpg?raw=true)
